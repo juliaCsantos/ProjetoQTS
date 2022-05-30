@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calcular Gasto Calórico Diário</h1>
+    </header>
+    <section>
+        <div id="sexo">
+            <strong>Gênero:</strong>
+                <input type="radio" name="sexo" id="masc">
+                <label for="masc">Masculino</label>
+                <input type="radio" name="sexo" id="feminino">
+                <label for="feminino">Feminino</label>
+        </div>
+        <div id="idade">
+            <label>Idade: <input type="number" name="idade" id="idade"></label> 
+        </div>
+        <div id="altura">
+            <label>Altura:<input type="number" placeholder="em CM (não use vírgulas)" name="altura" id="altura"></label>
+        </div>
+        <div id="peso">
+            <label>Peso: <input type="number" placeholder="em KG (não use vírgulas)" name="peso" id="peso"></label>     
+        </div>
+        <div id="freqtreino">
+            <strong>Frequência de treino:</strong>
+            <select name="treino" id="treino">
+                <option value="sedentario">Sedentário (0x treino p/semana)</option>
+                <option value="leve">Ativo (1x - 3x treino p/semana</option>
+                <option value="moderado">Moderado (4x - 5x treino p/semana)</option>
+                <option value="pesado">Pesado (5x - 6x treino p/semana)</option>
+                <option value="atleta">Atleta (7x+ treino p/semana)</option>
+            </select>
+        </div>
+        <div id="calcular">
+            <button id="submit">Calcular</button>
+        <p id="res"></p>    
+        </div>
+    </section>
+    <script src="formula.js"></script>
+</body>
+</html>

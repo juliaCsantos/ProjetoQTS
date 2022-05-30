@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gasto Calórico Diário</h1>
+    </header>
+    <section>
+        <div id="sexo">
+            Gênero: <!--pesquisar como fazer--> 
+            <br><br>
+                <label id="radio">Masculino
+                    <input type="radio" name="sexo" id="masc">
+                    <!--Mudar o id para "masculino"-->
+
+                    <span id="checkmark"></span>
+                </label>    
+                <label id="radio" for="feminino">Feminino                
+                    <input type="radio" name="sexo" id="feminino">
+                    <span id="checkmark"></span>
+                </label>    
+        </div>
+        <div id="cx1">
+            <label for="idade">Idade: </label> 
+            <input type="number" name="idade" id="idade">
+            <!--Adicionar min="1" e max="100" para impedir a seleção de números negativos ou flutuantes pela seta-->
+            <!--Adicionar oninput="validity.valid||(value='');" para impedir a digitação de valores flutuantes ou negativos-->
+            
+        </div>
+        <div id="cx2">
+            <label for="altura">Altura: </label>
+            <input type="number" placeholder="em CM (não use vírgulas)" name="altura" id="altura">
+            <!--Adicionar min="1", max="300" e oninput="validity.valid||(value='');"-->
+        </div>
+        <div id="cx3">
+            <label for="peso">Peso: </label>     
+            <input type="number" placeholder="em KG (não use vírgulas)" name="peso" id="peso">
+            <!--Adicionar min="1", max="600" e oninput="validity.valid||(value='');"-->
+        </div>
+        <div id="freqtreino">
+            <label for="treino">Frequência de treino:</label> <!--pesquisar como fazer-->
+                <select name="treino" id="treino">
+                    <option value=1.1>Sedentário (0x treino p/semana)</option>
+                    <option value=1.3>Leve (1x - 3x treino p/semana</option>
+                    <option value=1.55>Moderado (4x - 5x treino p/semana)</option>
+                    <option value=1.7>Pesado (6x treino p/semana)</option>
+                    <option value=1.9>Atleta (7x+ treino p/semana)</option>
+                </select>
+        </div>
+        <div id="calcular">
+            <button id="submit" onclick="calcular()">Calcular</button>
+            <p id="res"></p>
+        </div>
+    </section>
+    <script src="formula.js"></script>
+    <p id="formulas">*Fórmula utilizada: Harris-Benedict*</p>
+</body>
+</html>

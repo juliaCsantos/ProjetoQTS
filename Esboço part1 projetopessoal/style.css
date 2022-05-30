@@ -1,0 +1,48 @@
+body{
+    height: 1000px;
+    background-image: linear-gradient(to bottom right, rgb(134, 255, 134), rgba(133, 172, 255, 0.671), white);    
+}
+section{
+    width: 500px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 10px;
+    font: 12pt arial;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.075);
+}
+div{
+    padding: 15px;
+}
+h1{
+    font: 28pt arial;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    font-weight: 600;
+}
+#submit{
+    background-color: green;
+    padding: 10px 16px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    opacity: 0.6;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.226);
+}   
+#submit:hover{
+    opacity: 0.8;
+    color: rgb(187, 187, 187);
+}
+input:not([type="radio"]) {
+    width: 100%;
+}
+label{
+    width: 100%;
+    display: flex;
+}
